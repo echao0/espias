@@ -1,0 +1,65 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Persia</title>
+
+<link rel=”shortcut icon” type=”image/png” href=”/favicon.png”/>
+<link href="style.css" rel="stylesheet" type="text/css" />
+<meta name="viewport" content="width=device-width"/>
+
+</head>
+
+
+<body>
+	
+	<script> 
+
+		document.body.onload = function() {minim(); setTimeout(function(){ entrada(); }, 3000);}
+		function minim(){
+			$("#canvas").hide();
+		}
+
+		function entrada(){
+		    $("#intro").hide("slow");
+		    $("#canvas").show("slow");
+		}
+
+	</script>
+
+	<div id="intro"></div>
+	<div id="canvas">
+		<div id="top"> 
+				<div id="logo"> </div>
+			Pagina de instrucción Basica
+
+		</div>
+		
+		<div id="Cuerpo">
+			A continuación podrá ver los videos grabados por dos de nuestros mejores agentes, reconocidos especialistas en ocultación y camuflaje, así como en la utilización del kit básico de herramientas espías super avanzadas que han recibido.
+			<br /><br />
+
+			Por favor revíselos con cuidado y ponga mucha atención para no sufrir ningún daño y poder atrapar a todos los malos
+			<br /><br />
+
+			<video  id="video1" width="640" height="480">
+			  <source src="video/video1.mp4" type="video/mp4">
+			  <img src="imagen.png" alt="Video no soportado">
+			  Su navegador no soporta contenido multimedia.
+			</video>
+
+		<div>
+		  <button onclick="document.getElementById('video1').play()">Reproducir el video</button>
+		  <button onclick="document.getElementById('video1').pause()">Pausar el Audio</button>
+		  <button onclick="document.getElementById('video1').volume+=0.1">Aumentar el Volumen</button>
+		  <button onclick="document.getElementById('video1').volume-=0.1">Disminuir el Volumen</button>
+		</div>
+
+
+			
+
+
+		</div>
+	</div>
+</body>
+<script src="jquery-3.1.1.min.js"> </script>
