@@ -1,10 +1,11 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
+  <title>Central de Super Espias</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-html {background-color: rgba(0,0,0,0.4);}
-body {font-family: Arial, Helvetica, sans-serif;}
+html {background-color: rgba(0,0,0,0.4); background-image: url("/img/trasera1.png"); background-size: cover; }
+body {font-family: Arial, Helvetica, sans-serif; text-align: center;}
 
 /* Full-width input fields */
 input[type=text], input[type=password] {
@@ -26,11 +27,29 @@ button {
   cursor: pointer;
   width: 100%;
 }
+h2{ color: red; }
 
 button:hover {
   opacity: 0.8;
 }
 
+#cala{ 
+background-image: url("img/denied_mov.gif");
+width: 320px;
+height: 180px;
+background-size: cover; 
+margin-left: 40%;
+
+}
+
+#inicio{
+  margin-top: 15%;
+ /* padding-left: 30%;
+ display: table-cell;
+ vertical-align: middle;
+ text-align: center; /* requerido para alineación horizontal */
+
+}
 /* Extra styles for the cancel button */
 .cancelbtn {
   width: auto;
@@ -79,6 +98,7 @@ span.psw {
   margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
   border: 1px solid #888;
   width: 90%;
+  margin-left: 10%;
 }
 
 /* The Close Button (x) */
@@ -127,16 +147,25 @@ span.psw {
 </head>
 <body>
 
-<h2>El espia secreto</h2>
+<div id="inicio">
+
+
+<div id="cala"></div>
+
+<h2>PROHIBIDO ACCEDER!</h2>
+<h2>UNICAMENTE PERSONAL AUTORIZADO!</h2>
+
 
 <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+</div>
+
 
 <div id="id01" class="modal">
   
   <form class="modal-content animate" action="/action_page.php">
     <div class="imgcontainer">
       <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-      <img src="img_avatar2.png" alt="Avatar" class="avatar">
+      <img src="img/espia.png" alt="Avatar" class="avatar">
     </div>
 
     <div class="container">

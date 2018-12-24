@@ -2,20 +2,26 @@
 
 $urlM = './Mpage.html';
 $urlG = './Gpage.html';
+$urlN = './error.html';
 
-if ( $_GET['uname'] === "1" ) {
-	if ( $_GET['psw'] == "1") {
-	print "Hola Gabi";}
+if ( strval($_GET['uname']) == "0089" ) {
+	if ( $_GET['psw'] === "G10") {
 	header( "Location: $urlG" );
+
+}
+	
 }
 
-if ( $_GET['uname'] === "2" ) {
-	if ( $_GET['psw'] == "22") {
-		header( "Location: $urlM" );
-		print "Hola Migue";}
+if ( $_GET['uname'] == "0090" ) {
+	if ( $_GET['psw'] == "M10") {
+		header( "Location: $urlG" );
+		}
 }
 
-print $_GET['uname'];
-print  $_GET['psw'];
+
+Print "Clave no valida, se reportará el acceso a las autoridades.";
+print "<br />";
+Print "En caso que usted sea un agente con carnet, por favor intentelo de nuevo"; 
+//header( "Location: $urlN" );
 
 ?>

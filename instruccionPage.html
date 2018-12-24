@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Persia</title>
+<title>Central de Super Espias</title>
 
 <link rel=”shortcut icon” type=”image/png” href=”/favicon.png”/>
 <link href="style.css" rel="stylesheet" type="text/css" />
@@ -18,6 +18,10 @@
 		document.body.onload = function() {minim(); setTimeout(function(){ entrada(); }, 3000);}
 		function minim(){
 			$("#canvas").hide();
+			$('#logo').css("background-image", "url(img/anime2.gif)");
+			$('#logo').css("background-size", "cover");
+				$("#logo").width(344);
+
 		}
 
 		function entrada(){
@@ -31,31 +35,25 @@
 	<div id="canvas">
 		<div id="top"> 
 				<div id="logo"> </div>
-			Pagina de instrucción Basica
+			<span style="color:#0aef0a">Instrucción Basica</span>
 
 		</div>
 		
 		<div id="Cuerpo">
-			A continuación podrá ver los videos grabados por dos de nuestros mejores agentes, reconocidos especialistas en ocultación y camuflaje, así como en la utilización del kit básico de herramientas espías super avanzadas que han recibido.
+			A continuación podrán ver los videos grabados por dos de nuestros mejores agentes, reconocidos especialistas en ocultación y camuflaje, así como en la utilización del kit básico de herramientas espías super avanzadas que han recibido.
 			<br /><br />
 
-			Por favor revíselos con cuidado y ponga mucha atención para no sufrir ningún daño y poder atrapar a todos los malos
+			Por favor revísenlos atentamente y pongan mucha atención para no sufrir ningún daño y poder llevar acabo las misiones secretas mas ariesgadas y regresar sanos y salvos sin llegar a ser detectados por los espias enemigos.
+
 			<br /><br />
-
-			<video  id="video1" width="640" height="480">
-			  <source src="video/video1.mp4" type="video/mp4">
-			  <img src="imagen.png" alt="Video no soportado">
-			  Su navegador no soporta contenido multimedia.
-			</video>
-
-		<div>
-		  <button onclick="document.getElementById('video1').play()">Reproducir el video</button>
-		  <button onclick="document.getElementById('video1').pause()">Pausar el Audio</button>
-		  <button onclick="document.getElementById('video1').volume+=0.1">Aumentar el Volumen</button>
-		  <button onclick="document.getElementById('video1').volume-=0.1">Disminuir el Volumen</button>
-		</div>
-
-
+			<span style="color:#0aef0a">1. Introducción:</span>
+			<br />
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/WSRBwSMfh8Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		<br /><br />
+		Si cree que ya ha entendido a la perfección esta lección, por favor continúe con las siguientes haciendo click en el enlace:
+		<br /><br />
+		<a href="instruccionPage2.html">>>CLICK<<</a>
+		<br /><br />
 			
 
 

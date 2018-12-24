@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Central de Super Espias</title>
+
+<link rel=”shortcut icon” type=”image/png” href=”/favicon.png”/>
+<link href="style.css" rel="stylesheet" type="text/css" />
+<meta name="viewport" content="width=device-width"/>
+
+</head>
+
+
+<body>
+	
+	<script> 
+
+		document.body.onload = function() {minim(); setTimeout(function(){ entrada(); }, 3000);}
+		function minim(){
+			$("#canvas").hide();
+			$('#logo').css("background-image", "url(img/anime2.gif)");
+			$('#logo').css("background-size", "cover");
+				$("#logo").width(344);
+
+		}
+
+		function entrada(){
+		    $("#intro").hide("slow");
+		    $("#canvas").show("slow");
+		}
+
+	</script>
+
+	<div id="intro"></div>
+	<div id="canvas">
+		<div id="top"> 
+				<div id="logo"> </div>
+			<span style="color:#0aef0a">Misión Final</span>
+
+		</div>
+		
+		<div id="Cuerpo">
+			Llegados a este punto, creemos que ustedes ya están preparados para poder realizar su primera misión y traspasar las lineas enemigas con la intención de detener la bomba super mortifera que han preparado los Rusos.
+			<br /><br />
+			Por favor revisen el video que les hemos preparado acontinuación con toda la información que ha recogido nuestro departamento de inteligencia y estudienlo meticulosamente.
+			<br /><br />
+			Les deseamos mucha suerte y les pedimos que accedan al video en caso que deseen aceptar la misión.
+			
+
+			<br /><br />
+			<span style="color:#0aef0a">6. Misión Final:</span>
+			<br />
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/P4_FMyUpk-Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+			<br /><br />
+
+		Si necesitas regresas al apartado anterior, haz click en el siguiente enlace:
+		<br /><br />
+		<a href="instruccionPage4.html">>>CLICK<<</a>
+			
+
+
+		</div>
+	</div>
+</body>
+<script src="jquery-3.1.1.min.js"> </script>
